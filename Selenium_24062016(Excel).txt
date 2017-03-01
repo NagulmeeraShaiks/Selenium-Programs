@@ -1,0 +1,92 @@
+
+Download & configure jxl.jar
+
+http://www.mvnrepository.com/artifact/net.sourceforge.jexcelapi/jxl/2.6.12
+
+**************************************************************************************
+               Reading data from excel using JXL API
+**************************************************************************************
+
+1. FileInputStream fis=new FileInputStream(url of .xls file)
+2. Workbook wb=Workbook.getWorkbook(fis)
+3. Sheet s=wb.getSheet(name/index)
+4. s.getRows()   s.getColumns()
+5. s.getRows() ---> s.getCell(colindex,rowindex).getContents()
+   s.getColumns() ---> s.getCell(rowindex,colindex).getContents()
+
+**************************************************************************************
+               Writing data into excel using JXL API
+**************************************************************************************
+
+1. FileOutputStream fos=new FileOutputStream(url of .xls file)
+2. WritableWorkbook wwb=Workbook.createWorkbook(fos)
+3. WritableSheet ws=wwb.createSheet("sheetname",index)
+4. Label l=new Label(colindex,rowindex,data)
+5. ws.addCell(l)
+6. wwb.write()
+7. wwb.close()
+
+**************************************************************************************
+               Reading data from excel using POI API
+**************************************************************************************
+
+Download & configure POI jar files
+
+https://poi.apache.org/download.html
+
+1. FileInputStream fis=new FileInputStream(url of .xlsx file)
+2. XSSFWorkbook wb=new XSSFWorkbook(fis)
+3. XSSFSheet  sh1= wb.getSheetAt(Index); 
+               OR 
+   XSSFSheet  sh1= wb.getSheet(sheetName);
+4. sh1.getRow(index).getCell(index).getStringCellValue()
+
+**************************************************************************************
+               Writing data into excel using POI API
+**************************************************************************************
+
+1. FileOutputStream fos=new FileOutputStream(url of .xlsx file)
+2. XSSFWorkbook wb=new XSSFWorkbook()
+3. XSSFSheet s = wb.createSheet("sheetname");
+4. Row r=s.createRow(index);
+5. row.createCell(index).setCellValue("data");
+6. wb.write(fos)
+7. fos.close()
+
+*************************************************************************************
+                         Handling Browser History
+*************************************************************************************
+
+d.navigate().back()
+
+d.navigate().forward()
+
+d.navigate().refresh()
+
+d.navigate().to(url)
+
+d.manage().deleteAllCookies()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

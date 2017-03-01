@@ -1,0 +1,124 @@
+Selenium Real Time Interview Questions and Answers
+
+1) What are the Selenium Tools, and Testing Framework that you are using in your Current Project?
+ 
+We are using,
+
+• Selenium WebDriver for Creating Test Cases.
+• Java Programming for Enhancing Test cases.
+• TestNG Testing Framework for Grouping Test Cases, Executing Test Batches and generating Test reports.
+• Selenium Grid for Parallel Test Execution
+• Maven Project Management Tool
+-------------------------------------------------------------------
+2) What is your Project Operating Environment?
+ 
+Server side OS - Windows 2012, Client Side OS -Microsoft Windows 10
+-------------------------------------------------------------------
+3) What is your Project Domain and Application Environment?
+ 
+Our Project is Banking Project,
+
+Our AUT (Application Under Test) is Distributed Web Application developed using Java Technology 
+and Database is Oracle.
+-------------------------------------------------------------------
+4) What are the major challenges in Functional Test Automation?
+ 
+• Object / Element Identification.
+
+• Debugging Issues. etc...
+-------------------------------------------------------------------
+5) What are the difficulties that you faced in Object identification?
+
+Some Elements (Objects) not recognized properly using Selenium WebDriver Element locators.
+-------------------------------------------------------------------
+6) How you conducted Data Driven Testing in your project?
+
+We conducted Data driven Testing using external Excel file as Resource, we added some third party 
+excel jar files to Java Project in Eclipse.
+-------------------------------------------------------------------
+7) How you conducted Batch Testing in your project?
+
+We conducted Batch Testing using TestNG Testing Framework.
+-------------------------------------------------------------------
+8) How you conducted Cross browser testing in your project?
+
+Using Mozilla Firefox, IE and Google Chrome browsers(Downloaded IE and Google Chrome Browser drivers). 
+we executed Test cases.
+-------------------------------------------------------------------
+9) How you handled duplicate Elements in your project?
+
+Using index property of Elements we handled duplicate objects.
+-------------------------------------------------------------------
+10) How many Test cases you wrote for your Project/Module?
+
+I prepared around 120 Test cases in my Module. 
+-------------------------------------------------------------------
+11) How many defects you detected and give one example?
+
+I detected nearly 20 Defects in which 5 defects are Severe defects. 
+-------------------------------------------------------------------
+12) How you selected Test cases for Regression Testing?
+
+We selected Test cases for Regression Testing based on Defect effected Test cases and from defect 
+dependent Test cases.
+-------------------------------------------------------------------
+13) How you organized your Test Automation resources?
+
+We orgaized Test Automation Resources using our company Jira Test management tool
+-------------------------------------------------------------------
+14) Did you use any build management tool in your project?
+
+We used Maven build management tool in our project.
+-------------------------------------------------------------------
+15) How you handled errors in your Test scripts?
+
+We handled errors in our Test Scripts using Java Error handling features.
+-------------------------------------------------------------------
+16) Did you create any reusable components?
+
+Yes, We created some reusable components in our project for Login Functionality, Registration Functionality 
+etc...
+-------------------------------------------------------------------
+17) Did you find any Test Scenarios that not to be automated in your project using Selenium?
+
+Yes, We find some Some Test Scenarios in our Current project,
+
+ Functionalities that require more user interaction,
+
+Functionalities that require Dynamic test data submission.
+-------------------------------------------------------------------
+18) How to execute multiple Java programs at a time?
+
+We can execute multiple Java programs using XML file in TestNG Framework. 
+-------------------------------------------------------------------
+19) How to conduct parallel Test execution?
+
+Usually We conduct Parallel Test Execution using Selenium Grid, but no parallel test execution in 
+my Current project.
+-------------------------------------------------------------------
+20) What Defect management / Test management tool you used in your project?
+
+We are using Jira Test Management tool in our project with Selenium.
+-------------------------------------------------------------------
+21) How you communicated with development team to resolve the issues.
+
+We communicate Development team via Our Test Manager. 
+-------------------------------------------------------------------
+22) Did you involve in Selenium Test Environment Setup?
+
+Yes, I involved in Selenium Environment Setup in my Current Project.
+
+As per my project, we selected Java, Selenium WebDriver and TestNG Framework and Maven.
+
+> We Downloaded Eclipse IDE  and Extracted.
+> Downloaded Java Software and Installed.
+> Environment Variable path setup.
+> Downloaded Selenium WebDriver Java language bindings(jar files) and added to Java Project in Eclipse.
+> Downloaded and Installed TestNG Framework from Eclipse IDE.
+> Installed Maven build management tool.
+---------------------------------------------------------------------
+23) What is Debugging? When Debugging is required?
+
+Debugging is locating and isolating errors through step by step execution.
+Only for some TestCases Debugging is required. Whenever testcase is not Showing any error and not providing
+desired output

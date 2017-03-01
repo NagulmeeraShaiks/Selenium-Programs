@@ -1,0 +1,65 @@
+Java ---> Object Oriented Programming Language
+
+OOP's
+
+1. Class & Object
+  
+   Class ---> Set of similar objects
+
+class classname
+{ 
+  Var
+  Methods
+  Constructors 
+}
+   
+Object ---> Instance of class
+
+new operator
+
+classname objname=new classname()
+
+objname.varname
+objname.methodname()
+
+Var ---> Memory location name
+Method ---> block of executable statements
+
+Constructor ---> Used to initialize instance variables
+
+i. class name & constructor
+ii. Does not return any value
+iii. Automatically
+iv. Once per object
+
+Constructor Overloading
+
+This Keyword  ---> Refers present classs members
+
+Var  ---> this.varname
+Methods ---> this.methodname()
+Cons
+
+
+
+2. Inheritance
+3. Polymorphisam
+4. Abstraction
+5. Encapsulation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

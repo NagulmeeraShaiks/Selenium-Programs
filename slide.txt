@@ -1,0 +1,50 @@
+package basic;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import static org.junit.Assert.*;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.*;
+
+public class BrowserSlider {
+	WebDriver d;
+	@Before
+	public void startup(){
+	   d=new FirefoxDriver();
+	   d.manage().window().maximize();
+	   d.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+	}
+	@Test
+	public void testBrowserSlider() throws Exception
+	{
+	
+		d.get("http://www.flipkart.com/");
+      
+            		for(int j=0;isElementPresent(d, By.xpath("//a[@className='K6IBc- required-tracking _1kRlRX']/div[3]"));j++)
+            		{
+            			((RemoteWebDriver) d).executeScript("window.scrollBy(0,200)");
+            			Thread.sleep(2000);
+            		}
+            		d.findElement(By.xpath("//a[@className='K6IBc- required-tracking _1kRlRX']/div[3]")).click();
+            	
+	}
+	private boolean isElementPresent(WebDriver d, By b){
+	    try{
+	    		        d.findElement(b);
+	        return false;
+	    }catch(NoSuchElementException e){
+	        return true;
+	    }	}
+@After
+public void stop(){
+    //d.quit();
+}
+}
